@@ -1,0 +1,15 @@
+.modal#winnerModal
+  .modal-wrapper
+    .modal-header.underline
+      %h2 Game Status
+    .modal-body
+      %h2 You've won!
+      %p
+        %i Announcement:
+        %br
+        Congratulations! You have gone through trial by fire and have beaten the odds.
+    .modal-footer
+      = link_to root_path do
+        %button.cancelButton.secondary-button{ :type => "button" } Quit
+      %button.playAgainButton.primary-button.is-last{ :type => "button" } Win again!
+  .overlay

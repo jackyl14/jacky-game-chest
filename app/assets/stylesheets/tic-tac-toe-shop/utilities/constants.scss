@@ -1,0 +1,30 @@
+// ***********************************
+// Constants
+// ***********************************
+
+// Background
+$background-color:            #FFE4C4; //bisque
+
+// Buttons
+$primary-color:               #5F9F9F; //cadet blue
+$primary-hover-color:         #ADD8E6; //light blue
+$primary-focus-color:         #65909A; //lindsay eyes
+
+$secondary-color:             #C0C0C0; //silver
+$secondary-hover-color:       #D3D3D3; //light grey
+$secondary-focus-color:       #808080; //grey
+
+// Board Border Frame
+$board-border-color:          $primary-color;
+$board-background-color:      $primary-hover-color;
+$board-hover-color:           #F0FFFF; //azure
+$board-thickness:             10px;
+
+// Board X & O's
+$board-text-color:            #2F4F4F; //dark slate grey
+$board-font-size:             100px;
+$board-font-family:           Verdana;
+
+// Tic-Tac-Toe
+$board-ttt-color:             #4682B4; // steel blue
+$board-ttt-background-color:  #CCCCFF; // off white blue

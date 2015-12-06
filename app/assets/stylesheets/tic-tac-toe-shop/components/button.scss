@@ -1,0 +1,47 @@
+// ***********************************
+// Assets tic-tac-toe-board game board
+// ***********************************
+
+@mixin button-assets {
+  button {
+    outline: none;
+    border: 0px;
+    width: 120px;
+    height: 45px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom:20px;
+
+    &.is-last {
+      margin-left: 10px;
+    }
+  }
+
+  .primary-button {
+    background-color: $primary-color;
+    color: white;
+
+    &:hover {
+      background-color: $primary-hover-color;
+    }
+
+    &:focus {
+      background-color: $primary-focus-color;
+    }
+  }
+
+  .secondary-button {
+    background-color: $secondary-color;
+    color: black;
+
+    &:hover {
+      background-color: $secondary-hover-color;
+    }
+
+    &:focus {
+      background-color: $secondary-focus-color;
+    }
+  }
+}

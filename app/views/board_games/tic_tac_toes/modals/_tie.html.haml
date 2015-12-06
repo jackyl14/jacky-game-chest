@@ -1,0 +1,15 @@
+.modal#tieModal
+  .modal-wrapper
+    .modal-header.underline
+      %h2 Game Status
+    .modal-body
+      %h2 TIE!
+      %p
+        %i Announcement:
+        %br
+        Wow, you are quite the opponent, but I bet you just got lucky.
+    .modal-footer
+      = link_to root_path do
+        %button.cancelButton.secondary-button{ :type => "button" } Quit
+      %button.playAgainButton.primary-button.is-last{ :type => "button" } Feeling lucky!
+  .overlay

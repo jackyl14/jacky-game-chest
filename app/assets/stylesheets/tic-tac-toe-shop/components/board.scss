@@ -1,0 +1,74 @@
+// ***********************************
+// Assets tic-tac-toe-board game board
+// ***********************************
+
+@mixin tic-tac-toe-board-assets {
+  #tic-tac-toe-board {
+    position: absolute;
+    border-radius: 7px;
+    border: $board-thickness solid $board-border-color;
+    background-color: $board-background-color;
+    @extend %text-formatting;
+
+    table {
+      border-collapse:collapse;
+      @extend %table-size;
+
+      td {
+        width: 33%;
+        height: 33%;
+        text-align: center;
+
+        &:hover, &.active {
+          background-color: $board-hover-color;
+        }
+
+        &.active.tic-tac-toe {
+          color: $board-ttt-color;
+          background-color: $board-ttt-background-color;
+        }
+      }
+
+      tbody {
+
+        .top-row, .middle-row, .last-row {
+          .first-column, .middle-column, .last-column {
+            @extend %mouse-clickable;
+          }
+        }
+
+        .top-row {
+          border-bottom: $board-thickness solid $board-border-color;
+        }
+
+        .last-row {
+          border-top: $board-thickness solid $board-border-color;
+        }
+
+        td.col-1 {
+          border-right: $board-thickness solid $board-border-color;
+        }
+
+        td.col-3 {
+          border-left: $board-thickness solid $board-border-color;
+        }
+      }
+    }
+  }
+}
+
+%mouse-clickable {
+  cursor: pointer;
+}
+
+%text-formatting {
+  font-size: $board-font-size;
+  font-family: $board-font-family;
+  font-weight: bolder;
+  color: $board-text-color;
+}
+
+%table-size {
+  width:500px;
+  height:500px;
+}

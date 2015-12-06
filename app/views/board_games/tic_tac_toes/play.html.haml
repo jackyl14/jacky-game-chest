@@ -1,0 +1,23 @@
+.game-content
+  #tic-tac-toe-board
+    %table
+      %tbody
+        %tr.top-row.row-1
+          %td.first-column.col-1
+          %td.middle-column.col-2
+          %td.last-column.col-3
+        %tr.middle-row.row-2
+          %td.first-column.col-1
+          %td.middle-column.col-2
+          %td.last-column.col-3
+        %tr.last-row.row-3
+          %td.first-column.col-1
+          %td.middle-column.col-2
+          %td.last-column.col-3
+
+= render "board_games/tic_tac_toes/modals/intro"
+= render "board_games/tic_tac_toes/modals/player"
+= render "board_games/tic_tac_toes/modals/winner"
+= render "board_games/tic_tac_toes/modals/loser"
+= render "board_games/tic_tac_toes/modals/tie"
+= render "board_games/tic_tac_toes/modals/error"

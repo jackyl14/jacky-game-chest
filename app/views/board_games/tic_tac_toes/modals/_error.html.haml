@@ -1,0 +1,16 @@
+.modal#errorModal
+  .modal-wrapper
+    .modal-header.underline
+      %h2 Game Status
+    .modal-body
+      %h2 System Error
+      %p
+        %i Announcement:
+        %br
+        Sorry, an unexpected error has occured.
+        Please cancel or try playing again.
+    .modal-footer
+      = link_to root_path do
+        %button.cancelButton.secondary-button{ :type => "button" } Cancel
+      %button.playAgainButton.primary-button.is-last{ :type => "button" } Try again!
+  .overlay

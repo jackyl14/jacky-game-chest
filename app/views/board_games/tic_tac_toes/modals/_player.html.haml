@@ -1,0 +1,14 @@
+.modal#playerModal
+  .modal-wrapper
+    .modal-header
+      %h2 Game Play
+    .modal-body
+      %p
+        %i Announcement:
+        %br
+        Now, let the games begin, and may the odds forever be in your favor!
+        Please pick if you want to go first or second.
+    .modal-footer
+      %button#firstPlayerButton.secondary-button{ :type => "button", :value => "1" } First
+      %button#secondPlayerButton.primary-button.is-last{ :type => "button", :value => "2" } Second
+  .overlay

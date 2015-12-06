@@ -1,0 +1,16 @@
+.modal#introModal.active
+  .modal-wrapper
+    .modal-header
+      %h2 Classy Tic-Tac-Toe
+    .modal-body
+      %p
+        %i How to Play:
+        %br
+        You will be taking turns, playing against a computer.
+        First to get a line of three boxes (horizontally,
+        vertically, or diagonally) wins all the fame and glory.
+    .modal-footer
+      = link_to root_path do
+        %button.cancelButton.secondary-button{ :type => "button" } Cancel
+      %button#playButton.primary-button.is-last{ :type => "button" } Let's play!
+  .overlay

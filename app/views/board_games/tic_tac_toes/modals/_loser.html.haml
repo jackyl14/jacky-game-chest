@@ -1,0 +1,15 @@
+.modal#loserModal
+  .modal-wrapper
+    .modal-header.underline
+      %h2 Game Status
+    .modal-body
+      %h2 You've lost!
+      %p
+        %i Announcement:
+        %br
+        Unfortunately, your opponent has outplayed you, and you were doomed from the start.
+    .modal-footer
+      = link_to root_path do
+        %button.cancelButton.secondary-button{ :type => "button" } Run Away
+      %button.playAgainButton.primary-button.is-last{ :type => "button" } Play again!
+  .overlay
