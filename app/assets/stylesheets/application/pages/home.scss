@@ -1,0 +1,130 @@
+// ***********************************
+// Home Page CSS
+// ***********************************
+
+nav {
+  min-width: 960px;
+  z-index: 10;
+  height: 60px;
+  width: 100%;
+  padding: 25px 0px;
+  border: 0px;
+  background-color: $primary-home-color;
+  margin:0px;
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  display: inline-block;
+
+  .nav-brand {
+    font-size: 30px;
+    float:left;
+    font-weight: bold;
+    position: relative;
+
+    a {
+      color: white;
+      line-height: 1.65;
+    }
+
+  }
+
+  .nav-list {
+    float: right;
+
+    li {
+      list-style: none;
+
+      a {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        padding: 20px 40px;
+
+        &:hover, &.active {
+          background-color: $secondary-home-color;
+        }
+      }
+    }
+  }
+}
+
+header {
+  background-color: $background-home-color;
+  position:relative;
+  height: $section-height;
+  width: 100%;
+
+  .container {
+    padding: 200px 0px 100px 0px;
+  }
+
+  h1, h2 {
+    color: white;
+  }
+}
+
+section {
+  background-color: white;
+  position:relative;
+  height: $section-height;
+  width:100%;
+
+  .container {
+    padding: 100px 0px;
+  }
+
+  h2 {
+    color: $primary-home-color;
+  }
+
+  h3 {
+    color: white;
+    padding: 75px;
+  }
+
+  a {
+    .game-block {
+      width: 100%;
+      height: 200px;
+      background-color: $secondary-home-color;
+      margin: 0px auto 25px auto;
+
+      &.disabled {
+        opacity: 0.8;
+        cursor: default;
+      }
+    }
+
+    &:hover {
+      .game-block.active {
+        background-color: $background-home-color;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $primary-home-color;
+  position:relative;
+  height: 300px;
+  width: 100%;
+
+  .container {
+    padding: 50px 0px;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  a {
+    color: white;
+    font-size: 26px;
+
+    &:hover {
+      color: $background-home-color;
+    }
+  }
+}

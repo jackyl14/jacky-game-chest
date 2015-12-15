@@ -1,0 +1,31 @@
+%header
+  .container
+    .row
+      = image_tag("home-image.png")
+      .intro-text
+        %h1 HIP BOARD GAMES
+        .block-line
+        %h2 A WALK DOWN MEMORY LANE
+
+%section#games
+  .container
+    .row
+      %h2 GAMES
+    .row
+      = link_to board_games_tic_tac_toe_path do
+        .game-block.active
+          %h3 CLASSY TIC-TAC-TOE
+      %a
+        .game-block.disabled
+          %h3 MORE COMING SOON
+
+%footer
+  .container
+    .row
+      %h3 CONTACT ME
+      %p
+        %a{:href => "https://github.com/jackyl14", :target => "_blank"}
+          VIA GITHUB
+        %br
+        %a{:href => "https://www.linkedin.com/in/jackyl14", :target => "_blank"}
+          VIA LINKEDIN

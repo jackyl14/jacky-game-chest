@@ -1,0 +1,47 @@
+// CSS Constants
+@import "utilities/constants";
+
+// CSS Pages
+@import "pages/home";
+
+// CSS Assets
+body {
+  font-family: Montserrat,Helvetica Neue,Helvetica,Arial;
+  margin: 0px;
+  min-width: 960px;
+}
+
+h1, h2, h3 {
+  margin: 20px 0px;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0px 89px;
+}
+
+.row {
+  text-align: center;
+}
+
+.block-line {
+  width: 800px;
+  height: 10px;
+  background-color: white;
+  margin: 0px auto;
+}

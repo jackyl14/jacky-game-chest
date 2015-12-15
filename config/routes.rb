@@ -1,4 +1,7 @@
 JackyGameChest::Application.routes.draw do
+
+  root 'application#home'
+
   namespace :board_games do
     get 'tic_tac_toe' => 'tic_tac_toes#play'
   end
